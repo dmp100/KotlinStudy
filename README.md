@@ -1,4 +1,4 @@
-# 🎓 Kotlin 
+# 🎓 Kotlin 학습 여정
 
 ## 📚 학습 파트별 바로가기
 
@@ -16,17 +16,26 @@ if/when, 반복문, 예외처리 (예정)
 
 ---
 
-## 🔧 자동화 사용법
+## 🔧 사용법
 
 **새 파일 만들기:**
 ```bash
 ./gradlew newStudy
+# 파일명 입력: NumberLiterals
+# 패키지명 입력: literals  
+# → 파일 생성 + daily-log 업데이트 + Git 커밋 자동!
 ```
 
 **파일 실행:**
 ```bash
+# 기본 실행 (StringBasic.kt)
 ./gradlew run
-./gradlew runNew -PfileName=파일명 -PpackageName=패키지명
+
+# 새로 만든 파일 실행
+./gradlew runNew -PfileName=NumberLiterals -PpackageName=literals
+
+# 컴파일만 확인
+./gradlew compileKotlin
 ```
 
 ---
