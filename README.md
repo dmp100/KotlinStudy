@@ -1,17 +1,19 @@
-# 🎓 Kotlin 학습 여정
+# 🎓 Kotlin
 
 ## 📚 학습 파트별 바로가기
 
-### 🔤 [Literals](./src/main/kotlin/literals/)
+### 0. [Hello World](https://github.com/dmp100/KotlinStudy/blob/44e3f1e468feb50a7e842cb9ec8e2bc9d53f7e1d/src/main/kotlin/Main.kt)
+Hello World | Expression | Statement | How Program Works
+### 1.[Literals](./src/main/kotlin/literals/)
 문자열, 숫자 리터럴 | String Template, Raw String
 
-### 📦 [Variables](./src/main/kotlin/variables/)
+### 2.[Variables](./src/main/kotlin/variables/)
 val/var, 타입 추론, Nullable (예정)
 
-### 🔄 [Control Flow](./src/main/kotlin/controlflow/)
+###  3.[Control Flow](./src/main/kotlin/controlflow/)
 if/when, 반복문, 예외처리 (예정)
 
-### 🎯 [Functions](./src/main/kotlin/functions/)
+###  4.[Functions](./src/main/kotlin/functions/)
 기본 함수, 람다, 고차함수 (예정)
 
 ---
