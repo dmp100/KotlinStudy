@@ -21,7 +21,7 @@ if/when, 반복문, 예외처리 (예정)
 **새 파일 만들기:**
 ```bash
 ./gradlew newStudy
-# 파일명 입력: NumberLiterals
+# 코틀린 파일명 입력: NumberLiterals
 # 패키지명 입력: literals  
 # → 파일 생성 + daily-log 업데이트 + Git 커밋 자동!
 ```
