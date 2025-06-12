@@ -59,14 +59,6 @@ tasks.register("newStudy") {
         val packageName = readLine() ?: "literals"
 
         val today = LocalDate.now()
-        val dayOfWeek = try {
-            today.dayOfWeek.getDisplayName(
-                TextStyle.FULL,
-                Locale.KOREAN
-            )
-        } catch (e: Exception) {
-            today.dayOfWeek.name
-        }
 
         // 2. 코틀린 파일 생성
         val packageDir = File("src/main/kotlin/$packageName")
@@ -92,58 +84,48 @@ fun main() {
 }
         """.trimIndent())
 
-        // 3. daily-log.md 업데이트
-        val dailyLog = File("daily-log.md")
-        val existingContent = if (dailyLog.exists()) dailyLog.readText() else ""
+        // 3. 패키지별 README.md 생성/업데이트
+        val packageReadme = File(packageDir, "README.md")
 
-        // 오늘 날짜가 이미 있는지 확인
-        val todayHeader = "## 📅 $today"
-        val newEntry = if (!existingContent.contains(todayHeader)) {
-            """
-$todayHeader ($dayOfWeek)
-### 오늘 한 일
-- [`$packageName/$fileName.kt`](./src/main/kotlin/$packageName/$fileName.kt) $fileName 학습 시작
+        if (!packageReadme.exists()) {
+            // 새로운 README 생성
+            val packageTitle = packageName.replaceFirstChar {
+                if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString()
+            }
+            packageReadme.writeText("""
+# $packageTitle 학습
 
-### 배운 내용
-- 
+1. [$fileName](./$fileName.kt) - 
 
-### 느낀 점
-- 
-
----
-
-$existingContent
-            """.trimIndent()
+""".trimIndent())
+            println("📄 새로운 패키지 README 생성: ${packageReadme.name}")
         } else {
-            // 오늘 날짜가 있으면 파일만 추가
-            existingContent.replace(
-                "### 오늘 한 일",
-                "### 오늘 한 일\n- [`$packageName/$fileName.kt`](./src/main/kotlin/$packageName/$fileName.kt) $fileName 학습 시작"
-            )
+            // 기존 README에 항목 추가
+            val existingContent = packageReadme.readText()
+
+            // 마지막 번호 찾기
+            val numberRegex = """^(\d+)\.""".toRegex(RegexOption.MULTILINE)
+            val lastNumber = numberRegex.findAll(existingContent)
+                .mapNotNull { it.groupValues[1].toIntOrNull() }
+                .maxOrNull() ?: 0
+
+            val newNumber = lastNumber + 1
+            val newEntry = "$newNumber. [$fileName](./$fileName.kt) - \n"
+
+            packageReadme.appendText(newEntry)
+            println("📄 패키지 README 업데이트: 항목 $newNumber 추가")
         }
 
-        dailyLog.writeText(newEntry)
-
-        // 4. Git 자동 커밋
-        try {
-            val gitAdd = ProcessBuilder("git", "add", ".").directory(project.projectDir).start()
-            gitAdd.waitFor()
-
-            val commitMsg = "📚 $today: $fileName 학습 시작\n\n- 새 파일: $packageName/$fileName.kt\n- daily-log 업데이트"
-            val gitCommit = ProcessBuilder("git", "commit", "-m", commitMsg).directory(project.projectDir).start()
-            gitCommit.waitFor()
-
-            println("✅ Git 커밋 완료!")
-
-        } catch (e: Exception) {
-            println("⚠️ Git 커밋 실패: ${e.message}")
-        }
-
-        // 5. 결과 출력
+        // 4. 결과 출력
         println("\n🚀 파일 생성 완료!")
         println("📁 파일 위치: ${ktFile.absolutePath}")
         println("🔧 실행 명령어: ./gradlew runNew -PfileName=$fileName -PpackageName=$packageName")
-        println("📝 daily-log.md 업데이트됨")
+        println("📄 패키지 README: ${packageReadme.absolutePath}")
+
+        // 5. 메인 README 추가용 링크 안내
+        println("\n📋 메인 README에 추가할 링크:")
+        println("### X.[$packageName](./src/main/kotlin/$packageName/)")
+        println("설명 작성 후 수동으로 추가하세요.")
     }
 }
 

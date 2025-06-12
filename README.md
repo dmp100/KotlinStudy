@@ -4,7 +4,7 @@
 
 ### 0. [Hello World](https://github.com/dmp100/KotlinStudy/blob/44e3f1e468feb50a7e842cb9ec8e2bc9d53f7e1d/src/main/kotlin/Main.kt)
 Hello World | Expression | Statement | How Program Works
-### 1.[Literals](./src/main/kotlin/literals/)
+### 1.[Literals](./src/main/kotlin/literals/README.md)
 문자열, 숫자 리터럴 | String Template, Raw String
 
 ### 2.[Variables](./src/main/kotlin/variables/)
@@ -41,4 +41,4 @@ if/when, 반복문, 예외처리 (예정)
 ```
 
 ---
-💡 *더 자세한 학습 과정은 [daily-log.md](./daily-log.md)를 확인하세요!*
+💡 MySummaryNotes are Here [SummaryInKor](SummaryInKor.md)
