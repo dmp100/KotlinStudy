@@ -58,7 +58,9 @@
 - [Kotlin 공식 문서](https://kotlinlang.org/docs/)
 - [Hyperskill Kotlin Course](https://hyperskill.org/courses/69)
 - [Kotlin Koans](https://play.kotlinlang.org/koans/overview)
-
+- [PlayGround](https://play.kotlinlang.org/#eyJ2ZXJzaW9uIjoiMi4xLjIxIiwicGxhdGZvcm0iOiJqYXZhIiwiYXJncyI6IiIsIm5vbmVNYXJrZXJzIjp0cnVlLCJ0aGVtZSI6ImlkZWEiLCJjb2RlIjoiLyoqXG4gKiBZb3UgY2FuIGVkaXQsIHJ1biwgYW5kIHNoYXJlIHRoaXMgY29kZS5cbiAqIHBsYXkua290bGlubGFuZy5vcmdcbiAqL1xuXG5mdW4gbWFpbigpIHtcbiAgICAvLyByZWFkTGluZSgpIOuMgOyLoCDsp4HsoJEg6rCSIOyEpOyglVxuICAgIHZhbCBudW0xID0gMTBcbiAgICB2YWwgbnVtMiA9IDNcbiAgICBcbiAgICBwcmludGxuKFwi642n7IWIOiAke251bTEgKyBudW0yfVwiKVxuICAgIHByaW50bG4oXCLruoTshYg6ICR7bnVtMSAtIG51bTJ9XCIpXG4gICAgcHJpbnRsbihcIuqzseyFiDogJHtudW0xICogbnVtMn1cIilcbiAgICBwcmludGxuKFwi64KY64iX7IWIOiAke251bTEgLyBudW0yfVwiKVxufSJ9)
+- [Convert into Jotva](https://www.codeconvert.ai/kotlin-to-java-converter)
+- [Kotlin in Action 2/e](https://github.com/Kotlin/kotlin-in-action-2e?tab=readme-ov-file)
 ---
 
 ## 🔧 Gradle 사용법
