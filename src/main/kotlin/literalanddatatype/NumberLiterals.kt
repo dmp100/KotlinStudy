@@ -1,4 +1,4 @@
-package literals
+package literalanddatatype
 
 /**
  * 날짜: 2025-06-10
