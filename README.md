@@ -1,5 +1,5 @@
 # 🎓 Kotlin
-💡 MySummaryNotes are Here [SummaryInKor](SummaryInKor.md)
+
 
 ---
 ##  파트별 바로가기
