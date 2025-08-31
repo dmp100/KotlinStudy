@@ -11,7 +11,7 @@
 ### 3. [Input & Output](./src/main/kotlin/io/README.md)
 ### 4. [Operators](./src/main/kotlin/operators/README.md)
 ### 5. [Conditional Statements](./src/main/kotlin/conditionals/README.md)
-### 6. [Loops](./src/main/kotlin/controlStatement/README.md)
+### 6. [Loops](./src/main/kotlin/loops/README.md)
 ### 7. [Functions](./src/main/kotlin/functions/README.md)
 ### 8. [Collections](./src/main/kotlin/collections/README.md)
 ### 9. [Null Safety](./src/main/kotlin/nullsafety/README.md)
