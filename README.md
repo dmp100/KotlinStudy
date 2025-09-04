@@ -31,16 +31,13 @@
 
 ## Gradle 명령어
 
-**파일 실행:**
+**파일 생성:**
 ```bash
-# 기본 실행 (StringBasic.kt)
-./gradlew run
+# 기본 실행 
+./gradlew newStudy
+- 파일 입력후 패키지입력 
 
-# 새로 만든 파일 실행
-./gradlew runNew -PfileName=NumberLiterals -PpackageName=literalanddatatype
-
-# 컴파일만 확인
-./gradlew compileKotlin
+(Ex : readln -> io )
 ```
 
 ---
