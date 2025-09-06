@@ -24,7 +24,6 @@ fun main() {
     // String 자동변환, 전체 줄 문자 읽기.
     println(line)
 
-
     val line1 = readLine()!!
     // Kotlin 1.6 이전
     // 느낌표(!!)는 컴파일러에게 비어 있지 않은 입력을 보장하는 구문
@@ -65,8 +64,3 @@ fun main() {
     println(d2)
     // 한 줄에 여러 값 읽기
 }
-
-
-
-
-
