@@ -10,3 +10,4 @@
 8. [TypeConversion](./TypeConversion.kt) 
 9. [Coercion](./Coercion.kt)  
 10. [IntegerInAction](./IntegerInAction.kt) 
+11. [FloatingPointTypes](./FloatingPointTypes.kt) 

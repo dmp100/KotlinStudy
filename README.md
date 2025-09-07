@@ -1,4 +1,4 @@
-# Kotlin Study
+/# Kotlin Study
 
 <div align="center">
 <img width="400" height="267" alt="image" src="https://github.com/user-attachments/assets/d0d0f227-a5bf-4b3a-a332-6fa2c3dbf900" />
