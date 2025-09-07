@@ -8,4 +8,5 @@
 6. [CharType](./CharType.kt)
 7. [WorkingWithStrings](./WorkingWithStrings.kt)  
 8. [TypeConversion](./TypeConversion.kt) 
-9. [Coercion](./Coercion.kt) - 
+9. [Coercion](./Coercion.kt)  
+10. [IntegerInAction](./IntegerInAction.kt) 

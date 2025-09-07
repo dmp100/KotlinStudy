@@ -3,10 +3,14 @@ package literalanddatatype
 /**
  * 날짜: 2025-09-05
  * 주제: Coercion
- * 
+ *
  * 배운 내용:
- * - 
- * 
+ * - 타입 강제 변환(Type Coercion): 컴파일러가 표현식에서 자동으로 더 넓은 타입으로 변환하는 과정
+ * - 명시적 변환 vs 자동 변환의 차이점 (개발자 직접 vs 컴파일러 자동)
+ * - 타입 변환 우선순위: Double > Float > Long > Int (가장 넓은 타입으로 결과 결정)
+ * - Byte/Short 연산은 항상 Int 결과 (JVM의 32비트 미만 연산 미지원)
+ * - JVM 바이트코드 레벨에서의 타입 변환 과정 (I2L, LADD 등)
+ *
  * 어려웠던 점:
  * - 
  */
