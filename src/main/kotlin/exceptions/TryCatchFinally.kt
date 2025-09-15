@@ -1,4 +1,4 @@
-epackage exceptions
+package exceptions
 
 /**
  * 날짜: 2025-09-15
