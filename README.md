@@ -20,6 +20,7 @@
 ### 12. [Extension Functions](./src/main/kotlin/extensions/README.md)
 ### 13. [Lambda & Higher-Order Functions](./src/main/kotlin/lambda/README.md)
 ### 14. [Exception Handling](./src/main/kotlin/exceptions/README.md)
+### 16. [Algorithm](./src/main/kotlin/algorithm/README.md)
 
 ## 참고 자료
 - [Kotlin 공식 문서](https://kotlinlang.org/docs/)
@@ -38,6 +39,12 @@
 - 파일 입력후 패키지입력 
 
 (Ex : readln -> io )
+
+# 숫자 기호 (특수문자) 바로 쓰기
+
+맥: control + command + space → 특수문자
+
+윈도우: 윈도우키 + . → 특수문자
 ```
 
 ---

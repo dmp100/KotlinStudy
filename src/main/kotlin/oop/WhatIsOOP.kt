@@ -81,7 +81,7 @@ class Dog(name: String) : Animal(name) {
         println("멍멍!")
     }
 }
-class Cat(name: String) : Animal(name) {
+class Cat1(name: String) : Animal(name) {
     fun meow() {
         println("야옹!")
     }
@@ -95,7 +95,7 @@ class Cat(name: String) : Animal(name) {
  * (이 예제에서는 eat 메서드를 override하지 않아 동일하게 동작하지만, 개념적으로 다른 동작을 수행할 수 있음을 보여준다)
  */
 fun demonstratePolymorphism() {
-    val animals: List<Animal> = listOf(Dog("바둑이"), Cat("나비"))
+    val animals: List<Animal> = listOf(Dog("바둑이"), Cat1("나비"))
     animals.forEach { animal ->
         animal.eat() // '바둑이'가 밥을 먹습니다. '나비'가 밥을 먹습니다.
     }
@@ -138,7 +138,7 @@ fun main() {
 
     // Animal 클래스를 사용한 상속 예제
     val myDog = Dog("초코")
-    val myCat = Cat("루나")
+    val myCat = Cat1("루나")
     println()
     myDog.eat()
     myDog.bark()
