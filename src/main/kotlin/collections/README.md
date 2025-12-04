@@ -11,4 +11,4 @@
 9. [Set](./Set.kt) - 
 10. [MutableSet](./MutableSet.kt) - 
 11. [Emum](./Emum.kt) - 
-12. [decompile](./decompile.kt) - 
+12. [decompile](./decompile.kt) - [코틀린의 함수는 Java에서 어떻게 동작할까?](./notes/decompile.md)
