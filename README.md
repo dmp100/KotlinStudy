@@ -1,4 +1,4 @@
-/# Kotlin Study
+/ Kotlin Study
 
 <div align="center">
 <img width="400" height="267" alt="image" src="https://github.com/user-attachments/assets/d0d0f227-a5bf-4b3a-a332-6fa2c3dbf900" />
@@ -25,6 +25,7 @@
 ## 참고 자료
 - [Kotlin 공식 문서](https://kotlinlang.org/docs/)
 - [Hyperskill Kotlin Course](https://hyperskill.org/courses/69)
+- [Hyperskill to Korean](/BeginnerGuide)
 - [Kotlin Koans](https://play.kotlinlang.org/koans/overview)
 - [PlayGround](https://play.kotlinlang.org/)
 - [Java 변환기](https://www.codeconvert.ai/kotlin-to-java-converter)
